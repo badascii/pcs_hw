@@ -47,7 +47,7 @@ How do you put a variable inside a string? (interpolation or concatenation)
 What does the to_s or the to_i method do and why do we need them? (type casting)
 
   They respectively return the string and integer versions of the objects they are called on.
-  to_i returns the first integer that it comes across when called on a string.
+  to_i returns only the first integer or sequence of integers when called on a string.
 
   These methods allow us to convert data so that it may gain access to type-specific methods.
 
