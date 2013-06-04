@@ -11,7 +11,7 @@ How old are you in seconds? (If you did this with only a calculator how would yo
 
 What is a String?
 
-  A collection of zero or more letters, numbers, or symbols (not in the Ruby sense, although those
+  A collection of zero or more letters, numbers, or symbols (not symbol in the Ruby sense, although those
   do have a string representation) that is the literal text representation of its contents.
 
 
@@ -20,7 +20,7 @@ What’s the difference between single and double-quoted strings?
   Single quotes don't interpolate values with #{}. The only thing you can embed in single quotes is an
   escaped single quote and the backslash itself.
 
-  Double quotes do interpolation and can escape many other characters such as \t for taband \n for newline.
+  Double quotes do interpolation and can escape many other characters (such as \t for tab and \n for newline).
 
 
 How do you use a quote mark inside of a string? (escaping characters)
@@ -46,17 +46,18 @@ How do you put a variable inside a string? (interpolation or concatenation)
 
 What does the to_s or the to_i method do and why do we need them? (type casting)
 
-    They respectively return the string and integer versions of the objects they are called on.
-    to_i returns the first integer that it comes across when called on a string.
+  They respectively return the string and integer versions of the objects they are called on.
+  to_i returns the first integer that it comes across when called on a string.
 
-    These methods allow us to convert data so that it may gain access to type-specific methods.
+  These methods allow us to convert data so that it may gain access to type-specific methods.
 
 
 Odds:
 
 Why is 2 < 10 #=> true but '2' < '10' #=> false? (lexicographical ordering)
 
-
+  The '1' character is lower in order than the '2' character. The '0' has no effect here as the comparison
+  only checks the ordering of the first character in the strings.
 
 
 What are the only two values that evaluate to false in Ruby? (falsy values)
@@ -66,34 +67,53 @@ What are the only two values that evaluate to false in Ruby? (falsy values)
 
 What happens if you use = instead of == in a conditional?
 
+  It will assign a value instead of checking for equality. The conditional will not function properly.
 
 
 If you end up executing an infinite loop how do you stop it? (SIGKILL)
 
+  Ctrl + C
 
 
 Why would you ever want to use while true?
 
-
+  To create a loop.
 
 
 What do the && and || operators do? (logical operators)
 
-  && requires that the conditions on both sides be met to proceed.
+  && verifies that the conditions on both sides of the operator are true before proceeding.
 
-  || checks if
+  || only requires one of the two conditions to be true.
 
 
 What is the difference between if !false and unless false? (logical not)
 
+  It is harder to parse !false. Using unless makes the control structure easier to
+  understand and requires less actors.
+
 
 What is an array?
+
+  An ordered and indexed collection of any objects.
 
 
 What does it mean for an array to be zero indexed?
 
+  The first index (ie the leftmost value) is referenced with 0 instead of 1.
+
 
 What is the method in 8.1 we use to walk over all values in an array?
 
+  each
+
 
 What do push, pop, and last do? Is there a first?
+
+  push - destructively adds an element to the end of an array and returns that array
+
+  pop - destructively removes the last element of an array and returns that element
+
+  last - returns the last element of an array
+
+  Yes, with unshift and shift being the equivalent destructive instance methods for the front of an array.
