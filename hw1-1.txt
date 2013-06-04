@@ -6,7 +6,7 @@ What is your favorite color?
 
 How old are you in seconds? (If you did this with only a calculator how would you do it?)
 
-  28.17 (age in years, with months converted to a decimal) * 365 * 24 * 60 * 60 = 888369120 seconds
+  28.17 (age in years, with months converted to a decimal) * 365 * 24 * 60 * 60 = 888,369,120 seconds
 
 
 What is a String?
@@ -16,9 +16,11 @@ What is a String?
 
 
 What’s the difference between single and double-quoted strings?
-  Single quotes don't interpolate values with #{}. The only thing you can embed in single quotes is
-  an escaped single quote and the backslash itself. Double quotes do interpolation and can escape
-  many other characters such as \t for tab and \n for newline.
+
+  Single quotes don't interpolate values with #{}. The only thing you can embed in single quotes is an
+  escaped single quote and the backslash itself.
+
+  Double quotes do interpolation and can escape many other characters such as \t for taband \n for newline.
 
 
 How do you use a quote mark inside of a string? (escaping characters)
@@ -34,6 +36,7 @@ How do you use a quote mark inside of a string? (escaping characters)
 
 What is a variable?
 
+  A sequence of letters or numbers that point to an object or value.
 
 
 How do you put a variable inside a string? (interpolation or concatenation)
@@ -43,7 +46,10 @@ How do you put a variable inside a string? (interpolation or concatenation)
 
 What does the to_s or the to_i method do and why do we need them? (type casting)
 
-    They convert
+    They respectively return the string and integer versions of the objects they are called on.
+    to_i returns the first integer that it comes across when called on a string.
+
+    These methods allow us to convert data so that it may gain access to type-specific methods.
 
 
 Odds:
@@ -51,19 +57,31 @@ Odds:
 Why is 2 < 10 #=> true but '2' < '10' #=> false? (lexicographical ordering)
 
 
+
+
 What are the only two values that evaluate to false in Ruby? (falsy values)
+
+  false and nil
 
 
 What happens if you use = instead of == in a conditional?
 
 
+
 If you end up executing an infinite loop how do you stop it? (SIGKILL)
+
 
 
 Why would you ever want to use while true?
 
 
+
+
 What do the && and || operators do? (logical operators)
+
+  && requires that the conditions on both sides be met to proceed.
+
+  || checks if
 
 
 What is the difference between if !false and unless false? (logical not)
