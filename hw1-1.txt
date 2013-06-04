@@ -1,0 +1,81 @@
+
+What is your favorite color?
+
+  Blue or maybe red haha.
+
+
+How old are you in seconds? (If you did this with only a calculator how would you do it?)
+
+  28.17 (age in years, with months converted to a decimal) * 365 * 24 * 60 * 60 = 888369120 seconds
+
+
+What is a String?
+
+  A collection of zero or more letters, numbers, or symbols (not in the Ruby sense, although those
+  do have a string representation) that is the literal text representation of its contents.
+
+
+What’s the difference between single and double-quoted strings?
+  Single quotes don't interpolate values with #{}. The only thing you can embed in single quotes is
+  an escaped single quote and the backslash itself. Double quotes do interpolation and can escape
+  many other characters such as \t for tab and \n for newline.
+
+
+How do you use a quote mark inside of a string? (escaping characters)
+
+  1) "The old man yelled, \"Get off my damn lawn!\""
+
+  2) 'Don\'t take my word for it.'
+
+  3) %q{I'm not sure I approve of that there fancy "escaped text."}
+
+  4) %Q{"Wow, I can't believe it's already #{Time.now}!," he said tiredly.}
+
+
+What is a variable?
+
+
+
+How do you put a variable inside a string? (interpolation or concatenation)
+
+  "Hello #{user.name}"
+
+
+What does the to_s or the to_i method do and why do we need them? (type casting)
+
+    They convert
+
+
+Odds:
+
+Why is 2 < 10 #=> true but '2' < '10' #=> false? (lexicographical ordering)
+
+
+What are the only two values that evaluate to false in Ruby? (falsy values)
+
+
+What happens if you use = instead of == in a conditional?
+
+
+If you end up executing an infinite loop how do you stop it? (SIGKILL)
+
+
+Why would you ever want to use while true?
+
+
+What do the && and || operators do? (logical operators)
+
+
+What is the difference between if !false and unless false? (logical not)
+
+
+What is an array?
+
+
+What does it mean for an array to be zero indexed?
+
+
+What is the method in 8.1 we use to walk over all values in an array?
+
+
+What do push, pop, and last do? Is there a first?
