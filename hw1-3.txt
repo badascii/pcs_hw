@@ -1,5 +1,6 @@
 What is a REPL? Is irb a REPL, why or why not?
 
+  A read-eval-print is a programming environment. REPLs can do algorithm exploration and debug, which irb cannot.
 
 
 Why is the PickAxe book called PickAxe?
