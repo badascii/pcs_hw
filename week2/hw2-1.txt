@@ -17,7 +17,9 @@ In Test::Unit, what is the difference between assert and assert_equal?
 
 Where do we put code that needs to be run before or after each test?
 
-  Inside of the setup and teardown methods.
+  Inside setup and teardown methods.
+
+  RSpec has related methods called before and after.
 
 
 When we use setup, why do we need to use instance variables?
@@ -28,22 +30,38 @@ When we use setup, why do we need to use instance variables?
 
 How do you run all the specs in a folder?
 
+  Supply the desired directory to the spec command.
 
+  spec .
+  spec /directory/subdirectory
 
 
 What is a stub?
 
-
+  A stub is a stand-in class that allows for the testing of a class without
+  having to test every single dependency. They contains the same
+  methods as their real class counterpart but pass default values to the class
+  being tested without actually functioning.
 
 
 What is a mock?
 
-
+A mock is similar to a stub, except it takes an active role in testing and fails
+if its conditions aren't met. A mock knows which methods should be called and
+the arguments that should be passed to those methods.
 
 
 Why do we make sure that our tests are red before fixing them?
 
+  It is possible to write non-failing tests that never actually test anything
+  and always pass. We want to be sure that our test actually tests what we think
+  it tests.
 
 
+If your company won’t allow full tests, what does it mean to “exercise your
+code, even just a little bit.”
 
-If your company won’t allow full tests, what does it mean to “exercise your code, even just a little bit.”
+  Exercising code is writing basic functionality tests without using assert.
+  Some examples would be testing whether or not something is actually a class,
+  whether a method takes the correct number of arguments, and whether there are
+  syntax errors or exceptions present.
