@@ -5,20 +5,25 @@ When is it acceptable to use CamelCase?
 
 When do we use do...end instead of {...}?
 
-  When our block cannot comfortably fit on a single line.
+  When our block cannot comfortably fit onto a single line.
 
 
 In Test::Unit, what is the difference between assert and assert_equal?
 
+  assert allows us to check if some arbitrary condition is true.
+
+  assert_equal tests if two conditions are equal and fails if they aren't.
 
 
 Where do we put code that needs to be run before or after each test?
 
+  Inside of the setup and teardown methods.
 
 
 When we use setup, why do we need to use instance variables?
 
-
+  To reduce redundant code. The filler data for tests is created by setup and
+  assigned to instance variables, which are available to test methods.
 
 
 How do you run all the specs in a folder?
