@@ -1,0 +1,31 @@
+How do you add a newline to a String?
+
+  \n
+
+
+What is the difference between single and double quotes?
+
+  Single quotes don't interpolate values with #{}. The only thing you can embed in single quotes is an
+  escaped single quote and the backslash itself.
+
+  Double quotes do interpolation and can escape many other characters (such as \t for tab and \n for newline).
+
+
+How would you replace all instances of the word ‘pie’ with the word ‘pizza’ in a String?
+
+  @string.gsub('pie', 'pizza')
+
+
+What is the difference between gsub and gsub!?
+
+  gsub does not destructively modify the original string instance, while gsub!
+  does modify the original.
+
+
+Do a little research on apidock.com and find 5 methods on String that you think are interesting and could be useful.
+
+  .delete
+  .each_char
+  .crypt
+  @string[0]
+  .swapcase

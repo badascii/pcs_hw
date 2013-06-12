@@ -1,0 +1,77 @@
+What alternative keyword can we use if we’re negating the boolean expression inside our if?
+
+  unless
+
+
+What is the ‘negative doppleganger’ for while?
+
+  until
+
+
+What is a “modifier form” of an expression? (Which I call a post-conditional)
+
+  do something if condition
+
+
+What does a case statement return by default?
+
+  nil
+
+
+What two values evaluate to false inside an if?
+
+  false and nil
+
+
+What is a ternary expression used for (?:)?
+
+  It acts like a compact if statement.
+
+  If the condition following the first question mark is true, the statement to
+  the left of the colon is returned. If not, the statement to the right is
+  returned.
+
+
+What is a “guarded or” used for (||=)?
+
+  It sets the value of an object to the statement on the right of the operator
+  only when said object is nil. It is often used to set default values.
+
+
+What’s the fastest way to make an array of words?
+
+  %w{ this will become an array with each word assigned to a separate index }
+
+
+When using symbols as Hash keys, what are the two ways to initialize a Hash using the curly brace notation? (1.9 hash syntax)
+
+  { :key => :value }
+
+  { key: value }
+
+
+What is the name of the * operator?
+
+  splat
+
+
+Should you use a for loop to iterate over an Array or Hash? If not, what’s the alternative?
+
+  No. #each is greatly preferred.
+
+
+What is the difference between each and map?
+
+  each iterates over an array or hash and itself does nothing with the data.
+
+  map does the same iteration but returns a new array containing the data.
+
+
+What is a bang method?
+
+  A method with an exclamation point at the end. It signifies that the method
+  will behave differently in a dangerous or unexpected manner. The most common
+  use of bang is seen with alternate versions of methods that are destructive
+  (ie. they actually modify the object they are called on), but there are other
+  cases where it appears as well.
+
