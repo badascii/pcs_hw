@@ -1,6 +1,28 @@
 In your own words, summarize the 7 things on page 9-11 that jQuery does well
 
+  1) It quickly and easily traverses the DOM and accesses elements within.
 
+  2) It easily modifies the CSS styling of sites regardless of browser
+     technology.
+
+  3) It can directly modify the content of the DOM beyond just styling. The
+     actual structure of HTML can be manipulated and images, lists, text, and
+     any other elements are able to be dynamically modified.
+
+  4) It intercepts and acts on browser events (such as a click or mouse hover)
+     when they happen and eliminates the inconsistent behavior seen across
+     varied browsers.
+
+  5) It provides a variety of tools that allow for visual feedback and
+     interactive animations when the user manipulates a page.
+
+  6) It allows for developers to easily implement Ajax (dynamic client-server
+     communication and refreshing of individual elements without refreshing the
+     entire page). jQuery eliminates the complicated task of adapting Ajax
+     to the behavior of each particular browser, which normally all implement it
+     in different ways.
+
+  7) It enhances and simplifies basic JavaScript tasks that are commonly used.
 
 
 How do you include external javascript files in HTML
