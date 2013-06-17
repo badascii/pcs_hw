@@ -27,39 +27,47 @@ In your own words, summarize the 7 things on page 9-11 that jQuery does well
 
 How do you include external javascript files in HTML
 
-
+  <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
 
 
 Should jquery.js get included before or after our project files?
 
-
-
+  Before, so that it is available for the project files to properly reference
+  when they are loaded.
 
 
 What does this code do and why do we use it? $(document).ready()
 
-
-
+  It is a cross-browser solution that schedules function calls so that they are
+  run only when the DOM is available. It delays jQuery actions inside it
+  until all HTML elements are loaded, independent of any image rendering.
+  Some other features it has are the ability to execute functions that get added
+  after a browser event takes place, the presence of the window.onload event
+  handler safety net, and the ability to be called multiple times and
+  subsequently executed in the order called.
 
 
 What code would you use to select these things:
-    an element
-    an id
-    a class
-    a p tag, inside a div with class “turkey”, inside a body with the id “thanksgiving”.
+    an element:
+
+    an id:
+
+    a class:
+
+    a p tag, inside a div with class “turkey”, inside a body with the id
+    “thanksgiving”:
 
 
-
-
-How would you add “tiger stripes” to a table with jQuery? (tiger stripes are alternating background colors)
-
-
-
+How would you add “tiger stripes” to a table with jQuery? (tiger stripes are
+alternating background colors)
 
 
 How do we select only checkboxes that are currently checked?
 
 
 
+(research) What is the keyboard command to open the Chrome element inspector?
+To open the Chrome console?
 
-(research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
+
+
