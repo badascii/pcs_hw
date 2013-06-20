@@ -1,0 +1,33 @@
+In your own words, what is AJAX and why is it worth knowing about?
+
+
+
+How do you download an html fragment and assign it to a variable?
+
+
+
+What is JSON and why do we love it?
+
+
+
+What function do we use to download a JSON snippet from a server?
+
+
+
+How can we provide a function to $.getJSON which allows us to act on the data after it finishes downloading?
+
+
+
+What is the .val() function useful for? How does it compare to .html()?
+
+
+
+How do we specify an error callback for $.get?
+
+
+
+What is JSONP and how do we use it to get around cross-origin policies?
+
+
+
+What are the drawbacks of JSONP?

@@ -1,0 +1,43 @@
+What is the most common short version of $(document).ready()?
+
+
+
+What is “progressive enhancement”?
+
+
+
+How do you bind a click event to a button?
+
+    $('button').on('click', function(){});
+
+
+Inside a click handler, what is the variable this set to?
+
+    The element that was clicked on.
+
+
+What is event bubbling?
+
+
+
+How do we stop an event from bubbling up the chain?
+
+    With the stopPropogation function.
+
+
+How do we stop an element from taking its default action (e.g. a submit button
+will refresh the page or submit a form)
+
+    Pass the event variable (event or e) to the function and then call
+    preventDefault on it.
+
+
+How do we remove a binding?
+
+
+
+How do we hide and show elements?
+
+
+
+How do we blur or slide elements?

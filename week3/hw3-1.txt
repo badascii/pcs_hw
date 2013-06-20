@@ -48,26 +48,33 @@ What does this code do and why do we use it? $(document).ready()
 
 
 What code would you use to select these things:
-    an element:
+    an element: $('h1')
 
-    an id:
+    an id: $('#some-id')
 
-    a class:
+    a class: $('.some-class')
 
     a p tag, inside a div with class “turkey”, inside a body with the id
-    “thanksgiving”:
+    “thanksgiving”: $('body#thanksgiving .turkey p')
 
 
 How would you add “tiger stripes” to a table with jQuery? (tiger stripes are
 alternating background colors)
 
+  By targeting all the even or odd elements in a table using the :odd and :even
+  selectors. A custom CSS class can then be applied to only those elements
+  selected, changing their color. :nth-child() can also be used.
+
 
 How do we select only checkboxes that are currently checked?
 
+  Using the :checked form selector.
 
 
 (research) What is the keyboard command to open the Chrome element inspector?
 To open the Chrome console?
 
+  Chrome element inspector (two ways): command + option + I
+                                       command + shift + C
 
-
+  Chrome console: command + option + L
