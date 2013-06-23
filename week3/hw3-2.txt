@@ -18,7 +18,7 @@ How do you bind a click event to a button?
 
 Inside a click handler, what is the variable this set to?
 
-    The element that was clicked on.
+    The elements that were clicked on.
 
 
 What is event bubbling?
@@ -53,3 +53,5 @@ How do we hide and show elements?
 
 
 How do we blur or slide elements?
+
+    .toggle

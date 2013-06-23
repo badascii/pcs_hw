@@ -1,17 +1,27 @@
 How do you alter an a tag’s href attribute?
 
+  $('a[href]').text();
 
 
 How do you create new content and add it to the page?
 
+  .text()
+  .html()
+  .ajax()
 
 
 How do you move content within the page?
 
-
+  .append()
+  .prepend()
+  .add()
+  .delete()
 
 What jQuery function do we use to iterate over all elements in a jQuery set?
 
+  $.each
+
+  jQuery has implicit iteration of its elements.
 
 
 How do you copy a DOM element? How do you copy any event listeners as well?
@@ -20,9 +30,11 @@ How do you copy a DOM element? How do you copy any event listeners as well?
 
 What’s the difference between .text() and .html()?
 
+  .text() inserts and retrieves just plain text.
 
 
 How do we remove all the content inside an element?
+
 
 
 
