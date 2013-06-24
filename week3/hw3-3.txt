@@ -1,13 +1,28 @@
 How do you alter an a tag’s href attribute?
 
-  $('a[href]').text();
-
+  $('a').attr({
+    href: 'newhref.com'
+    });
 
 How do you create new content and add it to the page?
 
-  .text()
-  .html()
-  .ajax()
+  Pass it directly into the jQuery function like so:
+
+  $('<a href="www.example.com">Example<a>')
+
+  After which a function is called which assigns the location for the new HTML:
+
+  .prependTo()
+  .appendTo()
+  .insertBefore()
+  .insertAfter()
+
+  The inverted forms of these functions are:
+
+  .prepend()
+  .append()
+  .before()
+  .after()
 
 
 How do you move content within the page?
@@ -17,11 +32,12 @@ How do you move content within the page?
   .add()
   .delete()
 
+
 What jQuery function do we use to iterate over all elements in a jQuery set?
 
-  $.each
+  Implicit iteration is done automatically by jQuery.
 
-  jQuery has implicit iteration of its elements.
+  More complex iteration can be done explicitly with the .each() function.
 
 
 How do you copy a DOM element? How do you copy any event listeners as well?

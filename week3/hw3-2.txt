@@ -65,6 +65,9 @@ How do we hide and show elements?
 
 How do we blur or slide elements?
 
+    Using a variety of functions:
+
+    .blur()
     .fadeToggle()
     .fadeTo()
     .slideDown()
