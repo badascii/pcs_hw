@@ -27,10 +27,9 @@ How do you create new content and add it to the page?
 
 How do you move content within the page?
 
-  .append()
-  .prepend()
-  .add()
-  .delete()
+  Target the content we want to move with a jQuery wrapper and pass the
+  new location as an argument to either the insertBefore() or insertAfter()
+  functions.
 
 
 What jQuery function do we use to iterate over all elements in a jQuery set?
