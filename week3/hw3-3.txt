@@ -4,6 +4,7 @@ How do you alter an a tag’s href attribute?
     href: 'newhref.com'
     });
 
+
 How do you create new content and add it to the page?
 
   Pass it directly into the jQuery function like so:
@@ -17,7 +18,8 @@ How do you create new content and add it to the page?
   .insertBefore()
   .insertAfter()
 
-  The inverted forms of these functions are:
+  The inverted forms of these functions (with the new HTML passed as an
+  argument) are:
 
   .prepend()
   .append()
@@ -57,7 +59,23 @@ What’s the difference between .text() and .html()?
 
 How do we remove all the content inside an element?
 
+  .empty() removes all elements within the selected element.
+
+  .remove() and .detach() remove the selected element and every descendant from
+  the document, but do not actually delete them.
 
 
+When you insert new content into the page, does it have bindings attached to it?
+If not, how do we make sure that existing bindings that should have targeted the
+new element, do?
 
-When you insert new content into the page, does it have bindings attached to it? If not, how do we make sure that existing bindings that should have targeted the new element, do?
+  Using most techniques (such as those listed above), bindings are not attached
+  when content is added.
+
+  .on() and .delegate() allow for inserted content to dynamically receive
+  bindings. These functions are not dependent upon being wrapped in
+  $(document).ready to properly fire off.
+
+  .live() is a deprecated way to accomplish the same thing.
+
+
