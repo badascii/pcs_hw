@@ -42,11 +42,18 @@ What jQuery function do we use to iterate over all elements in a jQuery set?
 
 How do you copy a DOM element? How do you copy any event listeners as well?
 
+  .clone()
+
+  .clone(true) will clone any events attached to the element.
 
 
 What’s the difference between .text() and .html()?
 
-  .text() inserts and retrieves just plain text.
+  .text() sets and gets plain text only. When retrieving data it strips out HTML
+  tags and returns the result.
+
+  .html() preserves the markup formatting of the data it gets, and can be used
+  to set content with a second argument containing markup tags.
 
 
 How do we remove all the content inside an element?
