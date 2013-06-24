@@ -77,5 +77,3 @@ new element, do?
   $(document).ready to properly fire off.
 
   .live() is a deprecated way to accomplish the same thing.
-
-

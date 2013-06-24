@@ -1,20 +1,45 @@
 In your own words, what is AJAX and why is it worth knowing about?
 
+  It allows for dynamic content to be loaded on the page without the user being
+  subjected to a page refresh. Data can be pulled from a server using Javascript
+  and inserted into the page.
+
+  The data pulled is in either JSON or XML form, which is read by the JavaScript
+  and parsed into new DOM elements
+
+  The A in its name stands for "Asynchronous". AJAX is different from most other
+  JavaScript in that it is not executed in the order that it appears. Instead,
+  the script continues running while the HTTP request is being served. The new
+  content is then inserted later on. This prevents AJAX from locking up the
+  browser during the time data is being retrieved.
 
 
 How do you download an html fragment and assign it to a variable?
 
+  var fragment = $('#section').load('file.html')
 
 
 What is JSON and why do we love it?
 
+  JSON (JavaScript Object Notation) is essentially a hash. It is a native
+  JavaScript format in which data representing objects is transferred.
+
+  It accepts strictly-formatted sets of key-value pairs. The keys and any values
+  that are strings must be enclosed in double quotes.
+
+  JSON is awesome because of the concise, lightweight format it uses. It is
+  extremely easy for humans to read, and JavaScript transfers and processes it
+  efficiently.
 
 
 What function do we use to download a JSON snippet from a server?
 
+  .getJSON() retrieves the desired file and parses it from the JSON string
+  representation into a JavaScript object.
 
 
-How can we provide a function to $.getJSON which allows us to act on the data after it finishes downloading?
+How can we provide a function to $.getJSON which allows us to act on the data
+after it finishes downloading?
 
 
 
