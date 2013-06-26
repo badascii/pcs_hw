@@ -34,16 +34,18 @@ What is JSON and why do we love it?
 
 What function do we use to download a JSON snippet from a server?
 
-  .getJSON() retrieves the desired file and parses it from the JSON string
+  $.getJSON() retrieves the desired file and parses it from JSON string
   representation into a JavaScript object.
 
 
 How can we provide a function to $.getJSON which allows us to act on the data
 after it finishes downloading?
 
+  $.getJSON('file.json', function(data){});
 
 
 What is the .val() function useful for? How does it compare to .html()?
+
 
 
 
@@ -51,8 +53,12 @@ How do we specify an error callback for $.get?
 
 
 
+
 What is JSONP and how do we use it to get around cross-origin policies?
 
 
 
+
 What are the drawbacks of JSONP?
+
+

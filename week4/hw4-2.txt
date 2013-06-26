@@ -1,0 +1,16 @@
+What is a test spy? Is it closer to a mock or a stub? Or neither?
+
+
+
+
+How do you use a spy to facilitate the concept of mocking?
+
+
+
+
+Why would we watch objects to find out if certain functions have been called?
+
+
+
+
+What are the use cases for mocks in Javascript? Are they different from Ruby?
