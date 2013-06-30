@@ -2,7 +2,8 @@ What is a test spy? Is it closer to a mock or a stub? Or neither?
 
   A spy monitors a function and reports information on it when the test is done.
   It is somewhere in between mocks and stubs. Spies can fulfill the needs that
-  both stubs and mocks provide when using Sinon.
+  both stubs and mocks. Sinon also provides the functionality that all three
+  provide.
 
 
 How do you use a spy to facilitate the concept of mocking?
@@ -18,3 +19,9 @@ Why would we watch objects to find out if certain functions have been called?
 
 
 What are the use cases for mocks in Javascript? Are they different from Ruby?
+
+  Mocks are used for AJAX, HTML loading, and other events where files or servers
+  are being accessed and content is being loaded dynamically. User input and
+  dynamic are the biggest differences between JavaScript and Ruby. Testing these
+  things is an important and unique part of writing programs and web apps that
+  use JavaScript.
