@@ -1,0 +1,37 @@
+What is an asynchronous event and why is this a problem that jasmine even needs to solve?
+
+  An asynchronous event is when a function is called but is pushed to the bottom
+  of the stack and executed at a later point. Some examples are AJAX, callbacks,
+  and JavaScript libraries.
+
+
+How do you make jasmine wait for asynchronous events to happen?
+
+    .runs()
+    -Runs the function passed to it by itself as if that function were called
+     directly.
+
+    .waits(integer)
+    -Used after .runs() is called. It is passed an integer that then pauses test
+     execution for that number of milliseconds.
+
+    .waitsFor()
+    -Pauses test execution until the function it is passed returns true. It can
+     also be passed an optional integer argument that pauses that number of
+     milliseconds. It rolls the capabilities of .runs() and .waits() into a
+     single elegant function.
+
+
+If you didn’t want to actually make the ajax connection, how would you prevent
+jQuery from actually calling out to a server?
+
+
+
+If you didn’t actually have a server, but you wanted ajax to continue, how could
+you do that with Sinon.js?
+
+  By stubbing the AJAX jQuery function
+
+
+
+How does Sinon.js differ from Jasmine’s built in spies?

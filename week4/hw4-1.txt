@@ -1,25 +1,30 @@
-When you think about testing javascript, what use cases come to mind? Are they different from ruby?
+When you think about testing javascript, what use cases come to mind? Are they
+different from ruby?
 
-  Click and/or touch events are the primary thing I think of when
+  User input events are the most obvious case, which is wildly different from
+  Ruby.
 
 
 Is jasmine a unit test framework or an integration test framework?
 
+  Unit test
 
 
 How do you set up a basic jasmine runner? What boilerplate is needed?
 
-  SpecRunner file and add <script> tags pointing to the files being tested. to the ne
+  With a SpecRunner.html file., although tests can be added right into
+  index.html. <script> tags in the HTML <head> do the magic, pointing to the
+  JavaScript test files.
 
 
 If it roughly corresponds with an individual test, what does describe correspond with?
 
-  A class or feature, typically.
+  A grouping of related tests, a feature, or a class.
 
 
 How do you test equality?
 
-
+  expect(a).toEqual(b);
 
 
 What is the equivalent to setup/teardown?

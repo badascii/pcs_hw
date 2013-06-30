@@ -1,0 +1,15 @@
+What is a fixture?
+
+  Fixtures are test functions that simulate AJAX. Instead of actually contacting
+  the server, they retrieve the data from an alternate (often local) location.
+
+
+What is the purpose of providing a fixture as opposed to including jasmine
+in our website’s main layout if we want to test jQuery?
+
+  With a fixture
+
+  Providing a fixture
+
+
+What problem is jasmine-fixture trying to fix over jasmine-jquery?
