@@ -30,8 +30,11 @@ jQuery from actually calling out to a server?
 If you didn’t actually have a server, but you wanted ajax to continue, how could
 you do that with Sinon.js?
 
-  By stubbing the AJAX jQuery function
+  By stubbing the AJAX jQuery function.
 
 
 
 How does Sinon.js differ from Jasmine’s built in spies?
+
+  Sinon.js allows for the running of a local mocked server to directly test
+  remote requests such as AJAX. Jasmine does not have this functionality.

@@ -46,12 +46,19 @@ after it finishes downloading?
 
 What is the .val() function useful for? How does it compare to .html()?
 
-
+  It is used to set the value attribute in form elements. Instead of getting or
+  setting the complete HTML tags like the .html() function, .val() only accesses
+  the value attribute. It can also be passed in a function as an argument to
+  set values.
 
 
 How do we specify an error callback for $.get?
 
+  By method chaining .error() after $.get() is called. The .error() callback
+  can contain functions that display an error message to the page when it errors
+  out in order to let the user know what went wrong.
 
+  $.get().error();
 
 
 What is JSONP and how do we use it to get around cross-origin policies?
